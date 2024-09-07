@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owen Marsh Green</title>
+    <!-- Import Google font 'Caveat' -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Indie+Flower&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #305c57;
+        }
+
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .item {
+            border: 8px solid black;
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: white;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Different styles for quotes */
+        .quote-style-1 {
+            font-family: 'Caveat', cursive;
+            font-size: 26px;
+            color: #ff6347; /* tomato red */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+        }
+
+        .quote-style-2 {
+            font-family: 'Indie Flower', cursive;
+            font-size: 28px;
+            color: #2e8b57; /* sea green */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .quote-style-3 {
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 24px;
+            color: #6a5acd; /* slate blue */
+            text-transform: lowercase;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .quote-style-4 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #ff4500; /* orange red */
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Responsive iframe for dynamic sizing */
+        .item-iframe {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .item-iframe iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Make item-5 span 1 column and 2 rows */
+        .item-5 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="collage">
+        <div class="item item-1">
+            <img src="./Media/55cca39bbdc54c258773fcf91be211ce.jpeg" alt="Image 1">
+        </div>
+        <div class="item item-2">
+            <img src="./Media/ForgetGPSMeme.jpg" alt="Image 2">
+        </div>
+        <div class="item item-3">
+            <img src="./Media/livelonger.jpg" alt="Image 3">
+        </div>
+        <div class="item item-4">
+            <img src="./Media/nacc88yttocc88kuva-2017-07-16-kello-11-42-12.webp" alt="Image 4">
+        </div>
+        <div class="item item-5">
+            <img src="./Media/top-10-running-memes-blog-13-353x800_thumb.jpg" alt="Image 5">
+        </div>
+        <div class="item item-6">
+            <p class="quote-style-1">A wise man once told me to always listen carefully because…um…I can’t remember.</p>
+        </div>
+        <div class="item item-7">
+            <p class="quote-style-2">Common sense is like deodorant. The people who need it most never use it.</p>
+        </div>
+        <div class="item item-8">
+            <p class="quote-style-3">I’m not crazy. My imaginary friends can prove it.</p>
+        </div>
+        <div class="item item-9">
+            <p class="quote-style-4">I prefer not to think before speaking. I like being as surprised as everyone else by what comes out of my mouth.</p>
+        </div>
+        <div class="item item-10">
+            <p class="quote-style-1">Support bacteria, they are the only culture some people have..</p>
+        </div>
+        <div class="item item-iframe item-11">
+            <iframe src="https://www.youtube.com/embed/y2fvSzN7O5c?si=WLRECYGqJoWuI9Ip" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
